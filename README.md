@@ -38,18 +38,17 @@
 
 ## 5. Description of Each Process (see the code above)
 
-- **Data Preprocessing** 
-  - code: 1. Data Preprocessing.ipynb        
+-**Data Preprocessing** 
+  - code: "1. Data Preprocessing.ipynb"     
 
+-**Feature Engineering** 
+  - code: "2. Feature Engineering.ipynb"        
 
-**2. Feature Engineering**     
+-**Modeling** 
+  - code: "3. Modeling-Deepsurv.ipynb", "3. Modeling-lifelines-CoxPHFitter.ipynb", "3. Modeling-RandomSurvivalForest.ipynb", "3. Modeling-XGBoost Survival Embedding.ipynb"        
 
-
-
-**3. Modeling**     
-
-
-**4. Ensemble Models**     
+-**Ensemble Models** 
+  - code: "4. Ensemble Models.ipynb"        
 
 
 
