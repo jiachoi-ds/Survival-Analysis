@@ -93,7 +93,7 @@
     - **_Concordance Index_** -> We choose this method.     
       - It can be interpreted as the AUC value of the sensed data.    
       - Providing objective quality indicators        
- - Final Output: Estimated lamp life time    
-  - Model Output : Survival Probability    
-    - The estimated value is also derived by the probability distribution.     
-    - We set the final predicted value as the **Median value of the probability distribution**.    
+ - Final Output: Estimated lamp life time (Median value of the probability distribution)       
+    - Model Output : Survival Probability     
+      - The estimated value is also derived by the probability distribution.     
+      - We set the final predicted value as the **Median value of the probability distribution**.    
