@@ -31,7 +31,7 @@
 
 
 ## 4. Framework     
-<img width="450px" height=="250px">![Framework](https://user-images.githubusercontent.com/55779934/154243790-0a7b239b-593a-4e57-b6e2-857810526c6f.jpg)</img>    
+![Framework](https://user-images.githubusercontent.com/55779934/154243790-0a7b239b-593a-4e57-b6e2-857810526c6f.jpg)    
 
 
 
