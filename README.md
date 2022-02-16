@@ -38,18 +38,50 @@
 
 ## 5. Description of Each Process (see the code above)
 
--**Data Preprocessing** 
-  - code: "1. Data Preprocessing.ipynb"     
+### [Data Preprocessing]     
+  - Unnecessary Feature Removing    
+  - Data Imputation     
+    - Multivariate Feature Imputation(Estimation using the distribution of variables other than missing values.)    
+    - using Scikit-learn IterativeImputer Function    
+  - Data Scaling     
+    - Robust Normalization(Outliers are less affected by normalization using quantile values instead of mean and standard deviation.)      
+  > code: "1. Data Preprocessing.ipynb"     
 
--**Feature Engineering** 
-  - code: "2. Feature Engineering.ipynb"        
+&nbsp;
 
--**Modeling** 
-  - code: "3. Modeling-Deepsurv.ipynb", "3. Modeling-lifelines-CoxPHFitter.ipynb", "3. Modeling-RandomSurvivalForest.ipynb", "3. Modeling-XGBoost Survival Embedding.ipynb"        
+### [Feature Engineering]     
+  - One-hot Encoding 
+  - Feature Selection 
+    - Correlation based feature selection     
+    - Stepwise feature selection   
+    - RFECV(Recursive Feature Elimination with Cross Validation) Feature Selection    
+  - Feature Extraction     
+    - AutoEncoder dimensionality reduction     
+  - _Various Feature Engineering methods experimented on models, of which Autoencoder had the best performance._
+  > code: "2. Feature Engineering.ipynb"        
 
--**Ensemble Models** 
-  - code: "4. Ensemble Models.ipynb"        
+&nbsp;
 
+### [Modeling]    
+  - _Experimented by implementing various models._
+  - **Model 1: Xgboost Survival Embedding**    
+    - Gradient Boosting algorithm based on the ensemble model of tree-based models   
+    - XGBoost-based Survival Analysis Package     
+  - **Model 2: Random Survival Forest**     
+    - A model using a survival tree in RandomForest    
+    - Each survival tree division criterion uses "the log-rank splitting rule".    
+    - Meta-analysis using the average performed to increase accuracy and prevent overfitting.    
+  - **Model 3: Deepsurv**     
+    - It is a model that combines Survival Analysis and Neural Network and is Cox proportional Hazard Model based.        
+    - Deep feed-forward neural network    
+    - DeepSurv advances and the model expands to apply to nonlinear data and real-world problems    
+  > code: "3. Modeling-Deepsurv.ipynb", "3. Modeling-RandomSurvivalForest.ipynb", "3. Modeling-XGBoost Survival Embedding.ipynb"        
+
+&nbsp;
+
+### [Ensemble Models]      
+  - We ensembled the results of the three models to improve the model's performance.    
+  > code: "4. Ensemble Models.ipynb"        
 
 
 &nbsp;
